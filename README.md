@@ -13,9 +13,28 @@ cd lms-frotend
 3. install dependencies
 ```  
 npm install 
+```
+4.1 install tailwindcss 
+```
+npm install -D tailwindcss
+npx tailwindcss init
 
 ```
-4. run server
+ 4.2 tailwind.config.js
+```
+ content: ["./src/**/*.{html,js}"],
+
+```
+4.3 src/input.css -->
+
+```
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+
+5. run server
 ```
 npm run dev
 
